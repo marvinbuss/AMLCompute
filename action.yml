@@ -5,7 +5,7 @@ inputs:
   parametersFile:
     description: "JSON file including the parameters of the compute."
     required: true
-    default: "workspace.json"
+    default: "compute.json"
 runs:
   using: "docker"
   image: "Dockerfile"
