@@ -1,4 +1,4 @@
-# Azure Machine Learning Workspace Action
+# Azure Machine Learning Compute Action
 
 
 
