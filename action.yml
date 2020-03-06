@@ -1,5 +1,5 @@
-name: "Azure Machine Learning Workspace Connector"
-description: "Connect to or create a Azure Machine Learning Workspace with this GitHub Action"
+name: "Azure Machine Learning Compute Action"
+description: "Connect to or create a Compute Target to your Azure Machine Learning Workspace with this GitHub Action"
 author: "Marvin Buss"
 inputs:
   parametersFile:
