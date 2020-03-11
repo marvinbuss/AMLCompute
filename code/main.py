@@ -1,5 +1,4 @@
-import os
-import json
+import os, json
 from azureml.core import Workspace
 from azureml.core.compute import ComputeTarget, AmlCompute
 from azureml.exceptions import ComputeTargetException, AuthenticationException, ProjectSystemException
@@ -11,9 +10,11 @@ from msrest.exceptions import AuthenticationError
 def main():
     # Loading input values
     print("::debug::Loading input values")
-    parameters_file = os.environ.get("INPUT_PARAMETERSFILE", default="workspace.json")
+    parameters_file = os.environ.get("INPUT_PARAMETERSFILE", default="compute.json")
     azure_credentials = os.environ.get("INPUT_AZURECREDENTIALS", default="{}")
     azure_credentials = json.loads(azure_credentials)
+
+
 
     # Loading parameters file
     print("::debug::Loading parameters file")
